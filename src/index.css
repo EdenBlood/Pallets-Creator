@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+/** Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+@theme {
+  --color-c-seance-50: #faf5fe;
+  --color-c-seance-100: #f6eafd;
+  --color-c-seance-200: #ecd3fb;
+  --color-c-seance-300: #e0b1f6;
+  --color-c-seance-400: #ce82f0;
+  --color-c-seance-500: #b752e3;
+  --color-c-seance-600: #9d33c6;
+  --color-c-seance-700: #8427a5;
+  --color-c-seance-800: #6e2286;
+  --color-c-seance-900: #5d216e;
+  --color-c-seance-950: #3a0949;
+
+  
+  /* Fondo */
+  --color-c-dark-900: #1E1E1E;
+  --color-c-dark-800: #2A2A2A;
+  --color-c-dark-950: #151515;
+
+  /* Texto */
+  --color-c-light-100: #EDEDED;
+  --color-c-light-50:  #FFFFFF;
+  --color-c-light-200: #CFCFCF;
+
+  /* Texto secundario */
+  --color-c-gray-400: #A1A1A1;
+  --color-c-gray-300: #B8B8B8;
+  --color-c-gray-500: #8A8A8A;
+
+  /* Rojo Pinterest adaptado */
+  --color-c-red-pinterest-500: #E63946;
+  --color-c-red-pinterest-400: #FF4B5C;
+  --color-c-red-pinterest-600: #C92A38;
+
+  /* Botón/acento secundario */
+  --color-c-red-soft-400: #FF6B6B;
+  --color-c-red-soft-300: #FF8585;
+  --color-c-red-soft-500: #E05656;
+
+  /* Detalles / links activos */
+  --color-c-salmon-400: #F07167;
+  --color-c-salmon-300: #FF8A7A;
+  --color-c-salmon-500: #D65A5A;
+
+  /* Font */
+  --font-outfit: "Outfit", sans-serif;
+}
