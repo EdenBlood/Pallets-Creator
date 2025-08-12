@@ -42,3 +42,11 @@ export function getColorName(hex:string):string {
   
   return closest;
 }
+
+export function updatePallets(newPallet: Record<string, string>): void {
+  const root = document.documentElement;
+
+  Object.entries(newPallet).forEach(([intensity, color]) => {
+    root.style.setProperty(`--color-pallet-${intensity}`, color);
+  })
+}

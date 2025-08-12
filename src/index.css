@@ -2,6 +2,20 @@
 /** Outfit */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
+:root {
+  --color-pallee-50: #fff6ec;
+  --color-pallet-100: #ffecd3;
+  --color-pallet-200: #ffdab0;
+  --color-pallet-300: #ffb16a;
+  --color-pallet-400: #ff8f33;
+  --color-pallet-500: #ff4f00;
+  --color-pallet-600: #e64800;
+  --color-pallet-700: #b33a00;
+  --color-pallet-800: #802b00;
+  --color-pallet-900: #4d1a00;
+  --color-pallet-950: #4d1a00;
+}
+
 @theme {
   --color-c-seance-50: #faf5fe;
   --color-c-seance-100: #f6eafd;

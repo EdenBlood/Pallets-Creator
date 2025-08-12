@@ -12,7 +12,7 @@ export default function ColorItem({color, tailwindNumber}: ColorItemProps) {
 
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 drop-shadow-lg">
         {/* <p className="font-bold text-xs text-center">{`${colorName}-${tailwindNumber}`}</p> */}
 
         <div style={{backgroundColor: color, color: letterColor }} className={`w-full flex h-30 rounded-2xl flex-col text-center justify-center gap-2 font-bold text-xs`}>
