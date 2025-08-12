@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
 :root {
-  --color-pallee-50: #fff6ec;
+  --color-pallet-50: #fff6ec;
   --color-pallet-100: #ffecd3;
   --color-pallet-200: #ffdab0;
   --color-pallet-300: #ffb16a;
@@ -14,6 +14,8 @@
   --color-pallet-800: #802b00;
   --color-pallet-900: #4d1a00;
   --color-pallet-950: #4d1a00;
+
+  --btn-bg: ff4f00;
 }
 
 @theme {
@@ -62,4 +64,14 @@
 
   /* Font */
   --font-outfit: "Outfit", sans-serif;
+}
+
+@layer components {
+  .btn-pallet {
+    @apply py-2 w-full transition-colors duration-300 cursor-pointer rounded;
+    background-color: var(--btn-bg);
+  }
+  .btn-pallet:hover {
+    background-color: var(--btn-hover);
+  }
 }

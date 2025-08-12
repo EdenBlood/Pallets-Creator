@@ -5,14 +5,26 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   color: string;
   className?: string;
+  tone: string
+  nextTone: string
 }
 
-export default function Button({children, color, className , ...rest}: ButtonProps) {
+export default function Button({children, color, className, tone, nextTone, ...rest}: ButtonProps) {
+  const bgVar = `var(--color-pallet-${tone})`;
+  const hoverVar = `var(--color-pallet-${nextTone})`;
+  
   const luminance = getLuminance(color);
   const textColor = getLetterColor(luminance)
+  
+  const style = {
+    ['--btn-bg']: bgVar,
+    ['--btn-hover']: hoverVar,
+    'color': textColor
+  }
   return (
     <button 
-      className={`py-2 cursor-pointer transition-colors duration-300 ${className} text-${textColor}`}
+      style={style}
+      className={`btn-pallet ${className}`}
       {...rest}
     >{children}</button>
   )
