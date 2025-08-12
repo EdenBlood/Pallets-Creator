@@ -1,6 +1,6 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 /** Outfit */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
 
 :root {
   --color-pallet-50: #fff6ec;
@@ -31,36 +31,35 @@
   --color-c-seance-900: #5d216e;
   --color-c-seance-950: #3a0949;
 
-  
   /* Fondo */
-  --color-c-dark-900: #1E1E1E;
-  --color-c-dark-800: #2A2A2A;
+  --color-c-dark-900: #1e1e1e;
+  --color-c-dark-800: #2a2a2a;
   --color-c-dark-950: #151515;
 
   /* Texto */
-  --color-c-light-100: #EDEDED;
-  --color-c-light-50:  #FFFFFF;
-  --color-c-light-200: #CFCFCF;
+  --color-c-light-100: #ededed;
+  --color-c-light-50: #ffffff;
+  --color-c-light-200: #cfcfcf;
 
   /* Texto secundario */
-  --color-c-gray-400: #A1A1A1;
-  --color-c-gray-300: #B8B8B8;
-  --color-c-gray-500: #8A8A8A;
+  --color-c-gray-400: #a1a1a1;
+  --color-c-gray-300: #b8b8b8;
+  --color-c-gray-500: #8a8a8a;
 
   /* Rojo Pinterest adaptado */
-  --color-c-red-pinterest-500: #E63946;
-  --color-c-red-pinterest-400: #FF4B5C;
-  --color-c-red-pinterest-600: #C92A38;
+  --color-c-red-pinterest-500: #e63946;
+  --color-c-red-pinterest-400: #ff4b5c;
+  --color-c-red-pinterest-600: #c92a38;
 
   /* Botón/acento secundario */
-  --color-c-red-soft-400: #FF6B6B;
-  --color-c-red-soft-300: #FF8585;
-  --color-c-red-soft-500: #E05656;
+  --color-c-red-soft-400: #ff6b6b;
+  --color-c-red-soft-300: #ff8585;
+  --color-c-red-soft-500: #e05656;
 
   /* Detalles / links activos */
-  --color-c-salmon-400: #F07167;
-  --color-c-salmon-300: #FF8A7A;
-  --color-c-salmon-500: #D65A5A;
+  --color-c-salmon-400: #f07167;
+  --color-c-salmon-300: #ff8a7a;
+  --color-c-salmon-500: #d65a5a;
 
   /* Font */
   --font-outfit: "Outfit", sans-serif;
@@ -68,7 +67,7 @@
 
 @layer components {
   .btn-pallet {
-    @apply py-2 w-full transition-colors duration-300 cursor-pointer rounded;
+    @apply py-2 w-full transition-colors duration-300 cursor-pointer rounded font-semibold;
     background-color: var(--btn-bg);
   }
   .btn-pallet:hover {
